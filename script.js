@@ -21,7 +21,7 @@ const portfolio = {
             link: "https://contentflow.fyi"
         },
         {
-            text: "AI agents platform for automated customer communication",
+            text: "ai agents platform for automated customer communication",
             link: "https://qoldau.silkroadtech.kz"
         },
         {
@@ -30,19 +30,19 @@ const portfolio = {
         },
         {
             text: "electronic trading platform for government procurement in kazakhstan",
-            link: "https://en.wikipedia.org/wiki/Non-Disclosure_agreement"
+            link: "https://en.wikipedia.org/wiki/Non-disclosure_agreement"
         },
         {
-            text: "state revenue committee committe at the ministry of finance of kazakhstan",
+            text: "state revenue committee at the ministry of finance of kazakhstan",
             link: "https://portal.kgd.gov.kz/en/"
         },
         {
-            text: "fastest autopil ot bot for kazakhstan's top e-commerce platform",
+            text: "fastest autopilot bot for kazakhstan's top e-commerce platform",
             link: "https://kaskyr.com"
         },
         {
             text: "smart home mobile app for controlling iot devices",
-            link: "https://apps.apple.com/ru/app/connected-home-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0/id6499302704"
+            link: "https://apps.apple.com/ru/app/connected-home-%D1%83%D0%BC%D0%BD%D1%8B%D0%B9-%D0%B4%D0%BE%D0%BC/id6499302704"
         }
     ]
 };
@@ -74,6 +74,7 @@ function displayPortfolio() {
     addOutput(`<span class="prompt">$</span> ls projects/`);
     addOutput('');
 
+
     portfolio.projects.forEach((project) => {
         addOutput(`<a href="${project.link}" target="_blank" class="link"><span class="success">${project.text}</span></a>`);
     });
@@ -89,7 +90,6 @@ function displayPortfolio() {
         const href = isEmail ? `mailto:${link}` : link;
         addOutput(`<a href="${href}" target="_blank" class="link">${link}</a>`);
     });
-
 
 }
 

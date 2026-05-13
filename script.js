@@ -13,6 +13,14 @@ const portfolio = {
 
     projects: [
         {
+            text: "fastest scaling genai company in history",
+            link: "https://higgsfield.ai"
+        },
+        {
+            text: "content orchestration platform for seamless distribution",
+            link: "https://contentflow.fyi"
+        },
+        {
             text: "ai agents platform for automated customer communication",
             link: "https://qoldau.silkroadtech.kz"
         },
